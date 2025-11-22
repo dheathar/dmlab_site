@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | DM Lab</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/horizontal-scroll.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@300;400;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">DM Lab</a>
+            </div>
+            <div class="nav-cta">
+                <a href="contact.html" class="btn-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-logo">
+            <h2>DM Lab</h2>
+            <p>Data & Media</p>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li>
+                <a href="../index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="research.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    Research
+                </a>
+            </li>
+            <li>
+                <a href="projects.html" class="sidebar-link active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="team.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    Team
+                </a>
+            </li>
+            <li>
+                <a href="publications.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Publications
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    Contact
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p>&copy; 2024 DM Lab</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">Our Projects</h1>
+            <p class="page-subtitle">Flagship research initiatives funded by the European Union and national programs</p>
+        </div>
+
+        <!-- Page Content -->
+        <div class="page-content">
+            <div class="project-details" id="projectsContainer">
+                <!-- Projects will be dynamically loaded here -->
+                <div class="project-detail" id="eu-almpo">
+                    <div class="project-detail-header">
+                        <span class="project-tag">Horizon Europe</span>
+                        <h3>EU-ALMPO: Active Labor Market Policy Observatory</h3>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Funding Program</span>
+                                <span class="project-meta-value">Horizon Europe</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Duration</span>
+                                <span class="project-meta-value">2023-2026</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Status</span>
+                                <span class="project-meta-value">Active</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-detail-content">
+                        <p>The EU-ALMPO project establishes a comprehensive digital observatory for analyzing and developing active labor market policies across European nations. This initiative combines advanced data analytics, machine learning, and policy research to create evidence-based recommendations for employment services.</p>
+                        <p><strong>Objectives:</strong></p>
+                        <ul>
+                            <li>Create a unified data platform integrating labor market information from multiple EU countries</li>
+                            <li>Develop predictive models for assessing policy effectiveness and impact</li>
+                            <li>Build interactive visualization tools for policymakers and researchers</li>
+                            <li>Establish best practices for active labor market policy implementation</li>
+                        </ul>
+                        <p><strong>Key Innovations:</strong> Machine learning algorithms for policy impact assessment, real-time labor market trend analysis, and automated policy recommendation systems.</p>
+                    </div>
+                </div>
+
+                <!-- AGORA Project -->
+                <div class="project-detail" id="agora">
+                    <div class="project-detail-header">
+                        <span class="project-tag">Digital Innovation</span>
+                        <h3>AGORA: Digital Talent Discovery Ecosystem</h3>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Type</span>
+                                <span class="project-meta-value">National Initiative</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Duration</span>
+                                <span class="project-meta-value">2022-2025</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Status</span>
+                                <span class="project-meta-value">Active</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-detail-content">
+                        <p>AGORA is a comprehensive digital ecosystem designed to combat brain drain by connecting talented individuals with opportunities in their home countries. The platform uses intelligent matching algorithms to pair job seekers with employers, educational programs, and entrepreneurial resources.</p>
+                        <p><strong>Core Features:</strong></p>
+                        <ul>
+                            <li>AI-powered job matching and skills assessment</li>
+                            <li>Digital portfolio and credentialing system</li>
+                            <li>Career development and mentorship platform</li>
+                            <li>Labor market intelligence dashboard</li>
+                            <li>Integration with educational institutions and employers</li>
+                        </ul>
+                        <p><strong>Impact:</strong> AGORA aims to reverse brain drain trends by creating transparent, efficient pathways for talent to contribute to local economies while maintaining global competitiveness.</p>
+                    </div>
+                </div>
+
+                <!-- For4Opt Project -->
+                <div class="project-detail" id="for4opt">
+                    <div class="project-detail-header">
+                        <span class="project-tag">Machine Learning</span>
+                        <h3>For4Opt: ML-Driven Algorithm Optimization</h3>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Type</span>
+                                <span class="project-meta-value">Research Project</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Duration</span>
+                                <span class="project-meta-value">2023-2024</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Status</span>
+                                <span class="project-meta-value">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-detail-content">
+                        <p>The For4Opt project develops machine learning frameworks for automated algorithm optimization. By analyzing code patterns, execution profiles, and performance metrics, the system suggests optimizations that improve computational efficiency without manual intervention.</p>
+                        <p><strong>Research Contributions:</strong></p>
+                        <ul>
+                            <li>Neural architecture search for algorithm design</li>
+                            <li>Automated code profiling and bottleneck detection</li>
+                            <li>Reinforcement learning for parameter tuning</li>
+                            <li>Performance prediction models for algorithm selection</li>
+                        </ul>
+                        <p><strong>Applications:</strong> Scientific computing, data analytics pipelines, and real-time system optimization.</p>
+                    </div>
+                </div>
+
+                <!-- Growth4Blue Project -->
+                <div class="project-detail" id="growth4blue">
+                    <div class="project-detail-header">
+                        <span class="project-tag">EU Initiative</span>
+                        <h3>Growth4Blue: Sustainable Blue Economy Development</h3>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Funding Program</span>
+                                <span class="project-meta-value">EU Blue Growth</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Duration</span>
+                                <span class="project-meta-value">2022-2025</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Status</span>
+                                <span class="project-meta-value">Active</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-detail-content">
+                        <p>Growth4Blue promotes sustainable development in marine and maritime sectors through data-driven insights and collaborative research networks. The project integrates environmental monitoring data, economic indicators, and social impact metrics to guide blue economy initiatives.</p>
+                        <p><strong>Research Areas:</strong></p>
+                        <ul>
+                            <li>Marine data analytics and ocean health monitoring</li>
+                            <li>Sustainable aquaculture optimization</li>
+                            <li>Coastal tourism impact assessment</li>
+                            <li>Maritime logistics and supply chain efficiency</li>
+                            <li>Blue technology innovation tracking</li>
+                        </ul>
+                        <p><strong>Collaboration:</strong> Multi-stakeholder platform connecting researchers, industry partners, policymakers, and coastal communities across European regions.</p>
+                    </div>
+                </div>
+
+                <!-- Microidea Project -->
+                <div class="project-detail" id="microidea">
+                    <div class="project-detail-header">
+                        <span class="project-tag">Erasmus+</span>
+                        <h3>Microidea: Digital Skills for Entrepreneurs</h3>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Funding Program</span>
+                                <span class="project-meta-value">Erasmus+</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Duration</span>
+                                <span class="project-meta-value">2021-2024</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Status</span>
+                                <span class="project-meta-value">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-detail-content">
+                        <p>Microidea develops educational programs and digital tools to enhance entrepreneurial skills in the digital economy. The project creates open educational resources, e-learning platforms, and assessment tools for aspiring entrepreneurs across Europe.</p>
+                        <p><strong>Deliverables:</strong></p>
+                        <ul>
+                            <li>Digital entrepreneurship curriculum and learning modules</li>
+                            <li>Interactive business simulation platform</li>
+                            <li>Skills assessment and certification system</li>
+                            <li>Mentorship network connecting entrepreneurs and experts</li>
+                        </ul>
+                        <p><strong>Reach:</strong> Over 5,000 learners across 12 European countries have participated in Microidea training programs.</p>
+                    </div>
+                </div>
+
+                <!-- COVID-19 Analytics Project -->
+                <div class="project-detail" id="project-19-20">
+                    <div class="project-detail-header">
+                        <span class="project-tag">Public Health</span>
+                        <h3>Project 19-20: COVID-19 Impact Analysis</h3>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Type</span>
+                                <span class="project-meta-value">Emergency Response</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Duration</span>
+                                <span class="project-meta-value">2020-2022</span>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="project-meta-label">Status</span>
+                                <span class="project-meta-value">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-detail-content">
+                        <p>In response to the COVID-19 pandemic, the DM Lab initiated Project 19-20 to analyze the virus's societal impact using big data analytics. The project combined epidemiological data, economic indicators, and social metrics to provide insights for policy response.</p>
+                        <p><strong>Key Analyses:</strong></p>
+                        <ul>
+                            <li>Real-time pandemic spread modeling and prediction</li>
+                            <li>Economic impact assessment on labor markets</li>
+                            <li>Social distancing measure effectiveness evaluation</li>
+                            <li>Healthcare system capacity monitoring</li>
+                            <li>Vulnerable population identification</li>
+                        </ul>
+                        <p><strong>Outcomes:</strong> Research findings informed public health decisions and contributed to multiple peer-reviewed publications on pandemic data science.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: var(--color-bg-secondary); padding: var(--spacing-3xl) var(--spacing-xl); border-top: 1px solid var(--color-border); margin-top: var(--spacing-5xl);">
+        <div style="max-width: var(--max-width); margin: 0 auto; text-align: center;">
+            <p style="color: var(--color-text-tertiary); font-size: var(--font-size-sm);">
+                &copy; 2024 Data & Media Laboratory, University of Peloponnese. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    </div>
+
+    <script src="../js/theme-toggle.js"></script>
+    <script src="../js/scroll-manager.js"></script>
+    <script src="../js/projects.js"></script>
+</body>
+</html>

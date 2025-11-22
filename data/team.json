@@ -1,0 +1,245 @@
+{
+  "faculty": [
+    {
+      "id": "giannis-tzimas",
+      "name": "Giannis Tzimas",
+      "title": "Professor",
+      "role": "faculty",
+      "bio": "Leading research in data science and distributed systems at the University of Peloponnese.",
+      "image": "/images/team/giannis-tzimas.jpg",
+      "researchInterests": ["Data Science", "Distributed Systems", "Web Engineering"],
+      "email": "tzimas@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    },
+    {
+      "id": "panagiotis-zervas",
+      "name": "Panagiotis Zervas",
+      "title": "Associate Professor",
+      "role": "faculty",
+      "bio": "Specializing in educational technology and data-driven learning systems.",
+      "image": "/images/team/panagiotis-zervas.jpg",
+      "researchInterests": ["Educational Technology", "Data-Driven Learning", "E-Learning Systems"],
+      "email": "pzervas@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    },
+    {
+      "id": "michael-paraskevas",
+      "name": "Michael Paraskevas",
+      "title": "Associate Professor",
+      "role": "faculty",
+      "bio": "Expertise in machine learning, big data analytics, and artificial intelligence applications.",
+      "image": "/assets/images/team/michael-paraskevas.jpg",
+      "researchInterests": ["Machine Learning", "Big Data Analytics", "Artificial Intelligence"],
+      "email": "mparaskevas@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    },
+    {
+      "id": "john-tsaknakis",
+      "name": "John Tsaknakis",
+      "title": "Associate Professor",
+      "role": "faculty",
+      "bio": "Specializing in computational methods and data engineering.",
+      "image": "/assets/images/team/john-tsaknakis.jpg",
+      "researchInterests": ["Computational Methods", "Data Engineering"],
+      "email": "tsaknakis@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    },
+    {
+      "id": "panayiotis-alefragis",
+      "name": "Panayiotis Alefragis",
+      "title": "Assistant Professor",
+      "role": "faculty",
+      "bio": "Research focus on web engineering and digital systems.",
+      "image": "/assets/images/team/panayiotis-alefragis.jpg",
+      "researchInterests": ["Web Engineering", "Digital Systems"],
+      "email": "alefragis@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    },
+    {
+      "id": "sotiris-christodoulou",
+      "name": "Sotiris Christodoulou",
+      "title": "Assistant Professor",
+      "role": "faculty",
+      "bio": "Expertise in data analytics and computational intelligence.",
+      "image": "/assets/images/team/sotiris-christodoulou.jpg",
+      "researchInterests": ["Data Analytics", "Computational Intelligence"],
+      "email": "schristodoulou@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    },
+    {
+      "id": "christina-politi",
+      "name": "Christina (Tanya) Politi",
+      "title": "Assistant Professor",
+      "role": "faculty",
+      "bio": "Research in artificial intelligence and machine learning systems.",
+      "image": "/assets/images/team/christina-politi.jpg",
+      "researchInterests": ["Artificial Intelligence", "Machine Learning Systems"],
+      "email": "cpoliti@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    }
+  ],
+  "postdocs": [
+    {
+      "id": "vasileios-gkamas",
+      "name": "Vasileios Gkamas",
+      "title": "Postdoctoral Researcher",
+      "role": "postdoc",
+      "bio": "Research in educational technology and digital learning environments.",
+      "image": "/assets/images/team/vasileios-gkamas.jpg",
+      "researchInterests": ["Educational Technology", "Digital Learning"],
+      "email": "vgkamas@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    },
+    {
+      "id": "vassiliki-gkantouna",
+      "name": "Vassiliki Gkantouna",
+      "title": "Postdoctoral Researcher",
+      "role": "postdoc",
+      "bio": "Expertise in domain-specific design patterns and software engineering.",
+      "image": "/assets/images/team/vassiliki-gkantouna.jpg",
+      "researchInterests": ["Software Engineering", "Design Patterns", "Ontologies"],
+      "email": "vgkantouna@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    },
+    {
+      "id": "foteini-grivokostopoulou",
+      "name": "Foteini Grivokostopoulou",
+      "title": "Postdoctoral Researcher",
+      "role": "postdoc",
+      "bio": "Research in ontology-based user modeling and personalization in e-learning.",
+      "image": "/assets/images/team/foteini-grivokostopoulou.jpg",
+      "researchInterests": ["E-Learning", "User Modeling", "Personalization", "Ontologies"],
+      "email": "fgrivokostopoulou@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    },
+    {
+      "id": "isidoros-perikos",
+      "name": "Isidoros Perikos",
+      "title": "Postdoctoral Researcher",
+      "role": "postdoc",
+      "bio": "Expertise in sentiment analysis, hidden Markov models, and social media analytics.",
+      "image": "/assets/images/team/isidoros-perikos.jpg",
+      "researchInterests": ["Sentiment Analysis", "Social Media Analytics", "Machine Learning", "Natural Language Processing"],
+      "email": "iperikos@uop.gr",
+      "links": {
+        "googleScholar": "",
+        "orcid": "",
+        "linkedin": "",
+        "github": "",
+        "personalWebsite": ""
+      }
+    }
+  ],
+  "phd": [
+    {
+      "id": "phd-student-1",
+      "name": "PhD Candidate 1",
+      "title": "PhD Candidate",
+      "role": "phd",
+      "bio": "Research in machine learning and data analytics.",
+      "image": "/assets/images/team/placeholder-phd.jpg",
+      "researchInterests": ["Machine Learning", "Data Analytics"],
+      "supervisor": "Michael Paraskevas",
+      "links": {}
+    }
+  ],
+  "msc": [
+    {
+      "id": "msc-student-1",
+      "name": "MSc Student 1",
+      "title": "MSc Student",
+      "role": "msc",
+      "bio": "Working on AI applications in real-world systems.",
+      "image": "/assets/images/team/placeholder-msc.jpg",
+      "researchInterests": ["Artificial Intelligence", "Applied AI"],
+      "supervisor": "Giannis Tzimas",
+      "links": {}
+    }
+  ],
+  "collaborators": [
+    "Dr. Ioannis Hatzilygeroudis (University of Patras)",
+    "Dr. Phivos Mylonas (Ionian University)",
+    "Dr. Spyros Sioutas (University of Patras)",
+    "Dr. Katia Kermanidis (Ionian University)",
+    "Dr. Ioannis Mporas (University of Hertfordshire, UK)",
+    "Dr. George Drakopoulos (Ionian University)",
+    "Dr. Eleni Spyrou (National Centre for Scientific Research Demokritos)",
+    "Dr. Christos Makris (University of Patras)",
+    "Dr. Evangelos Varvarigos (National Technical University of Athens)",
+    "Dr. Andreas Stafylopatis (National Technical University of Athens)",
+    "Dr. Katia Lida Kermanidis (Ionian University)",
+    "Dr. Phivos Mylonas (National Technical University of Athens)"
+  ],
+  "engineers": [
+    {
+      "name": "Technical Staff Member 1",
+      "role": "Software Engineer",
+      "expertise": "Full-stack development, ML deployment"
+    },
+    {
+      "name": "Technical Staff Member 2",
+      "role": "Data Engineer",
+      "expertise": "Data pipelines, infrastructure"
+    }
+  ]
+}

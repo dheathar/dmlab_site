@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | DM Lab</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/horizontal-scroll.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/publications.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@300;400;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">DM Lab</a>
+            </div>
+            <div class="nav-cta">
+                <a href="contact.html" class="btn-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-logo">
+            <h2>DM Lab</h2>
+            <p>Data & Media</p>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li>
+                <a href="../index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="research.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    Research
+                </a>
+            </li>
+            <li>
+                <a href="projects.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="team.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    Team
+                </a>
+            </li>
+            <li>
+                <a href="publications.html" class="sidebar-link active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Publications
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    Contact
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p>&copy; 2024 DM Lab</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="page-container">
+            <div class="page-header">
+                <h1 class="page-title">Publications</h1>
+                <p class="page-subtitle">Research contributions and academic output from the Data & Media Laboratory</p>
+            </div>
+
+            <!-- Filter Bar (Sticky) -->
+            <div class="publications-filter-bar" id="filterBar">
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label class="filter-label" for="yearFilter">Year</label>
+                        <select id="yearFilter" class="filter-select">
+                            <option value="">All Years</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label" for="typeFilter">Type</label>
+                        <select id="typeFilter" class="filter-select">
+                            <option value="">All Types</option>
+                            <option value="Journal Article">Journal Article</option>
+                            <option value="Conference Paper">Conference Paper</option>
+                            <option value="Workshop Paper">Workshop Paper</option>
+                            <option value="Book Chapter">Book Chapter</option>
+                        </select>
+                    </div>
+
+                    <div class="search-input-wrapper">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input
+                            type="text"
+                            id="searchInput"
+                            class="search-input"
+                            placeholder="Search publications..."
+                        >
+                    </div>
+
+                    <button id="clearFilters" class="clear-filters-btn">Clear Filters</button>
+                </div>
+            </div>
+
+            <!-- Publications Content -->
+            <div class="page-content">
+                <div id="publicationsContainer">
+                    <!-- Publications will be dynamically loaded here -->
+                </div>
+
+                <!-- Empty State -->
+                <div id="emptyState" class="publications-empty" style="display: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <h3>No publications found</h3>
+                    <p>Try adjusting your search or filter criteria</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/theme-toggle.js"></script>
+    <script src="../js/publications.js"></script>
+</body>
+</html>

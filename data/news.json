@@ -1,0 +1,97 @@
+{
+  "news": [
+    {
+      "id": "news-001",
+      "type": "announcement",
+      "title": "EU-ALMPO Project Launched",
+      "date": "2024-01-15",
+      "category": "Project Launch",
+      "summary": "DM Lab leads technical development in new Horizon Europe project on labour market analysis.",
+      "content": "The Data & Media Laboratory is proud to announce its role in the newly launched EU-ALMPO (European Labour Market Policy Observatory) project. As a technical partner, the lab will develop AI-powered tools for labour market analysis and policy recommendations.",
+      "image": "/assets/images/news/eu-almpo-launch.jpg",
+      "tags": ["EU Projects", "AI", "Labour Market"],
+      "author": "Giannis Tzimas",
+      "featured": true
+    },
+    {
+      "id": "news-002",
+      "type": "award",
+      "title": "Best Paper Award at IISA 2024",
+      "date": "2024-07-20",
+      "category": "Award",
+      "summary": "Research on energy forecasting wins prestigious best paper award.",
+      "content": "Dr. Michael Paraskevas and team received the Best Paper Award at the International Conference on Information, Intelligence, Systems and Applications (IISA 2024) for their work on deep learning-based energy demand forecasting.",
+      "image": "/assets/images/news/best-paper-award.jpg",
+      "tags": ["Awards", "Publications", "Energy"],
+      "author": "Michael Paraskevas",
+      "featured": true
+    },
+    {
+      "id": "news-003",
+      "type": "event",
+      "title": "AI in Education Workshop",
+      "date": "2024-09-10",
+      "category": "Workshop",
+      "summary": "DM Lab hosts international workshop on AI applications in education.",
+      "content": "The lab successfully hosted a two-day international workshop on 'AI Applications in Modern Education', bringing together researchers, educators, and industry professionals to discuss the future of educational technology.",
+      "image": "/assets/images/news/ai-education-workshop.jpg",
+      "tags": ["Workshops", "Education", "AI"],
+      "author": "Panagiotis Zervas",
+      "featured": false
+    }
+  ],
+  "events": [
+    {
+      "id": "event-001",
+      "type": "seminar",
+      "title": "Guest Lecture: Trustworthy AI Systems",
+      "date": "2024-11-15",
+      "time": "14:00-16:00",
+      "location": "Room A101, University of Peloponnese",
+      "speaker": {
+        "name": "Prof. Maria Koutsomitropoulou",
+        "affiliation": "National Technical University of Athens",
+        "bio": "Expert in trustworthy AI and ethical computing"
+      },
+      "description": "An exploration of trust, transparency, and accountability in modern AI systems.",
+      "registrationRequired": true,
+      "registrationUrl": "",
+      "tags": ["Seminar", "AI Ethics", "Guest Lecture"]
+    },
+    {
+      "id": "event-002",
+      "type": "conference",
+      "title": "Hellenic Data Science Conference 2024",
+      "date": "2024-12-05",
+      "endDate": "2024-12-07",
+      "location": "Athens, Greece",
+      "description": "DM Lab members will present 3 papers at the annual Hellenic Data Science Conference.",
+      "website": "https://hdsc2024.example.com",
+      "tags": ["Conference", "Data Science"]
+    }
+  ],
+  "pastTalks": [
+    {
+      "id": "talk-001",
+      "title": "Machine Learning for Labour Market Analysis",
+      "speaker": "Giannis Tzimas",
+      "event": "European Data Science Summit",
+      "date": "2024-06-12",
+      "location": "Brussels, Belgium",
+      "type": "Keynote",
+      "slidesUrl": "",
+      "videoUrl": ""
+    },
+    {
+      "id": "talk-002",
+      "title": "Sentiment Analysis in Educational Platforms",
+      "speaker": "Isidoros Perikos",
+      "event": "IEEE ICALT 2024",
+      "date": "2024-07-08",
+      "location": "Virtual",
+      "type": "Invited Talk",
+      "slidesUrl": "",
+      "videoUrl": ""
+    }
+  ]
+}

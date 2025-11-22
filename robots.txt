@@ -1,0 +1,18 @@
+# robots.txt for Data & Media Laboratory website
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://dmlab.uop.gr/sitemap.xml
+
+# Disallow admin or development directories if any
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /dist/
+
+# Allow all important content
+Allow: /pages/
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+Allow: /data/

@@ -1,0 +1,130 @@
+{
+  "researchAreas": [
+    {
+      "id": "web-data-engineering",
+      "title": "Web & Data Engineering",
+      "shortDescription": "Building scalable web applications and data-intensive systems for the modern internet",
+      "fullDescription": "Our research in Web & Data Engineering focuses on developing robust, scalable, and efficient systems for managing and processing large-scale data on the web. We explore semantic web technologies, knowledge graphs, linked data, and modern web architectures.",
+      "icon": "database",
+      "image": "/assets/images/research/web-data-engineering.jpg",
+      "topics": [
+        "Semantic Web Technologies",
+        "Knowledge Graphs",
+        "Linked Open Data",
+        "Web Services & APIs",
+        "Microservices Architecture",
+        "Data Integration",
+        "Ontology Engineering",
+        "Graph Databases"
+      ],
+      "relatedPublications": ["pub-2019-02"],
+      "relatedProjects": ["agora"],
+      "teamMembers": ["giannis-tzimas", "panayiotis-alefragis", "vassiliki-gkantouna"]
+    },
+    {
+      "id": "ai-machine-learning",
+      "title": "AI & Machine Learning",
+      "shortDescription": "Advancing artificial intelligence through novel algorithms and real-world applications",
+      "fullDescription": "We develop cutting-edge machine learning algorithms and AI systems that solve complex real-world problems. Our research spans supervised, unsupervised, and reinforcement learning, with applications in computer vision, natural language processing, and predictive analytics.",
+      "icon": "cpu",
+      "image": "/assets/images/research/ai-ml.jpg",
+      "topics": [
+        "Deep Learning",
+        "Neural Networks",
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Reinforcement Learning",
+        "Transfer Learning",
+        "Computer Vision",
+        "Natural Language Processing"
+      ],
+      "relatedPublications": ["pub-2020-02", "pub-2019-01", "pub-2019-07"],
+      "relatedProjects": ["eu-almpo", "for4opt"],
+      "teamMembers": ["michael-paraskevas", "christina-politi", "sotiris-christodoulou"]
+    },
+    {
+      "id": "big-data-analytics",
+      "title": "Big Data Analytics",
+      "shortDescription": "Extracting insights from massive datasets using distributed computing and advanced analytics",
+      "fullDescription": "Our Big Data Analytics research addresses the challenges of processing, analyzing, and extracting value from massive datasets. We develop scalable algorithms, distributed systems, and visualization techniques for handling big data in various domains.",
+      "icon": "bar-chart",
+      "image": "/assets/images/research/big-data.jpg",
+      "topics": [
+        "Distributed Computing",
+        "Hadoop & Spark Ecosystems",
+        "Stream Processing",
+        "Data Mining",
+        "Predictive Analytics",
+        "Data Visualization",
+        "Scalable Algorithms",
+        "Cloud Computing"
+      ],
+      "relatedPublications": ["pub-2019-04"],
+      "relatedProjects": ["eu-almpo", "growth4blue"],
+      "teamMembers": ["michael-paraskevas", "john-tsaknakis"]
+    },
+    {
+      "id": "computational-optimization",
+      "title": "Computational Optimization",
+      "shortDescription": "Solving complex optimization problems using advanced mathematical and computational techniques",
+      "fullDescription": "We develop and apply optimization algorithms to solve challenging real-world problems. Our research includes mathematical programming, metaheuristics, multi-objective optimization, and their applications in energy, logistics, and scheduling.",
+      "icon": "trending-up",
+      "image": "/assets/images/research/optimization.jpg",
+      "topics": [
+        "Linear & Nonlinear Programming",
+        "Metaheuristic Algorithms",
+        "Multi-objective Optimization",
+        "Constraint Satisfaction",
+        "Combinatorial Optimization",
+        "Energy Optimization",
+        "Resource Allocation",
+        "Scheduling Algorithms"
+      ],
+      "relatedPublications": ["pub-2020-01"],
+      "relatedProjects": ["for4opt"],
+      "teamMembers": ["john-tsaknakis"]
+    },
+    {
+      "id": "sentiment-analysis-nlp",
+      "title": "Sentiment Analysis & NLP",
+      "shortDescription": "Understanding human language and emotions through computational linguistics",
+      "fullDescription": "Our Natural Language Processing research focuses on understanding, generating, and analyzing human language. We specialize in sentiment analysis, opinion mining, text classification, and developing NLP tools for Greek and other languages.",
+      "icon": "message-circle",
+      "image": "/assets/images/research/nlp.jpg",
+      "topics": [
+        "Sentiment Analysis",
+        "Opinion Mining",
+        "Text Classification",
+        "Named Entity Recognition",
+        "Machine Translation",
+        "Greek Language Processing",
+        "Social Media Analytics",
+        "Hidden Markov Models for NLP"
+      ],
+      "relatedPublications": ["pub-2019-03", "pub-2019-04", "pub-2019-06"],
+      "relatedProjects": ["project-19-20"],
+      "teamMembers": ["isidoros-perikos", "michael-paraskevas"]
+    },
+    {
+      "id": "educational-technology",
+      "title": "Educational Technology & E-Learning",
+      "shortDescription": "Transforming education through technology, data-driven personalization, and intelligent tutoring",
+      "fullDescription": "We develop innovative educational technologies that enhance teaching and learning. Our research includes e-learning platforms, personalized learning systems, educational data mining, and AI-powered tutoring systems.",
+      "icon": "book-open",
+      "image": "/assets/images/research/edtech.jpg",
+      "topics": [
+        "E-Learning Platforms",
+        "Personalized Learning",
+        "Educational Data Mining",
+        "Intelligent Tutoring Systems",
+        "Learning Analytics",
+        "User Modeling",
+        "Adaptive Learning Systems",
+        "BYOD in Education"
+      ],
+      "relatedPublications": ["pub-2019-05", "pub-2019-08"],
+      "relatedProjects": ["microidea", "agora"],
+      "teamMembers": ["panagiotis-zervas", "foteini-grivokostopoulou", "vasileios-gkamas"]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "courses": [
+    {
+      "id": "course-ml-fundamentals",
+      "code": "CS501",
+      "title": "Machine Learning Fundamentals",
+      "level": "Graduate (MSc)",
+      "semester": "Fall",
+      "credits": 7.5,
+      "instructor": "Michael Paraskevas",
+      "description": "Introduction to machine learning theory and practice, covering supervised and unsupervised learning, neural networks, and deep learning basics.",
+      "topics": [
+        "Supervised Learning (Regression, Classification)",
+        "Unsupervised Learning (Clustering, Dimensionality Reduction)",
+        "Neural Networks & Deep Learning",
+        "Model Evaluation & Validation",
+        "Feature Engineering",
+        "Ensemble Methods"
+      ],
+      "prerequisites": ["Linear Algebra", "Probability & Statistics", "Python Programming"],
+      "syllabus": "/assets/courses/ml-fundamentals-syllabus.pdf",
+      "githubRepo": "",
+      "materials": []
+    },
+    {
+      "id": "course-big-data",
+      "code": "CS502",
+      "title": "Big Data Analytics",
+      "level": "Graduate (MSc)",
+      "semester": "Spring",
+      "credits": 7.5,
+      "instructor": "Giannis Tzimas",
+      "description": "Comprehensive course on processing and analyzing large-scale datasets using modern big data technologies and distributed computing frameworks.",
+      "topics": [
+        "Distributed Computing Concepts",
+        "Apache Hadoop Ecosystem",
+        "Apache Spark (RDDs, DataFrames, MLlib)",
+        "Stream Processing (Kafka, Spark Streaming)",
+        "NoSQL Databases",
+        "Data Warehousing",
+        "Scalable Machine Learning"
+      ],
+      "prerequisites": ["Databases", "Algorithms", "Python or Scala"],
+      "syllabus": "/assets/courses/big-data-syllabus.pdf",
+      "githubRepo": "",
+      "materials": []
+    },
+    {
+      "id": "course-nlp",
+      "code": "CS503",
+      "title": "Natural Language Processing",
+      "level": "Graduate (MSc)",
+      "semester": "Fall",
+      "credits": 7.5,
+      "instructor": "Christina Politi",
+      "description": "Advanced course covering modern NLP techniques, from classical methods to state-of-the-art transformer models.",
+      "topics": [
+        "Text Preprocessing & Tokenization",
+        "Word Embeddings (Word2Vec, GloVe)",
+        "Recurrent Neural Networks (LSTMs, GRUs)",
+        "Attention Mechanisms",
+        "Transformer Models (BERT, GPT)",
+        "Sentiment Analysis",
+        "Named Entity Recognition",
+        "Machine Translation"
+      ],
+      "prerequisites": ["Machine Learning", "Deep Learning Basics", "Python"],
+      "syllabus": "/assets/courses/nlp-syllabus.pdf",
+      "githubRepo": "",
+      "materials": []
+    },
+    {
+      "id": "course-web-data",
+      "code": "CS401",
+      "title": "Web Data Management",
+      "level": "Graduate (MSc)",
+      "semester": "Spring",
+      "credits": 7.5,
+      "instructor": "Panayiotis Alefragis",
+      "description": "Explore semantic web technologies, knowledge graphs, and modern web data management techniques.",
+      "topics": [
+        "Semantic Web & RDF",
+        "SPARQL Query Language",
+        "Ontology Engineering",
+        "Knowledge Graphs",
+        "Linked Data",
+        "Graph Databases (Neo4j)",
+        "Web APIs & Microservices",
+        "Data Integration"
+      ],
+      "prerequisites": ["Databases", "Web Development"],
+      "syllabus": "/assets/courses/web-data-syllabus.pdf",
+      "githubRepo": "",
+      "materials": []
+    },
+    {
+      "id": "course-ai-education",
+      "code": "EDU505",
+      "title": "AI in Education",
+      "level": "Graduate (MSc)",
+      "semester": "Fall",
+      "credits": 7.5,
+      "instructor": "Panagiotis Zervas",
+      "description": "Application of AI and data science techniques to educational technology, including intelligent tutoring systems and learning analytics.",
+      "topics": [
+        "Educational Data Mining",
+        "Learning Analytics",
+        "Intelligent Tutoring Systems",
+        "Personalized Learning",
+        "Student Modeling",
+        "Adaptive Learning Systems",
+        "E-Learning Platforms",
+        "Ethical AI in Education"
+      ],
+      "prerequisites": ["Machine Learning or Data Mining"],
+      "syllabus": "/assets/courses/ai-education-syllabus.pdf",
+      "githubRepo": "",
+      "materials": []
+    }
+  ],
+  "studentProjects": [
+    {
+      "id": "project-thesis-001",
+      "title": "Deep Learning for Medical Image Classification",
+      "type": "MSc Thesis",
+      "student": "Student Name",
+      "supervisor": "Michael Paraskevas",
+      "year": 2024,
+      "status": "Ongoing",
+      "description": "Development of CNN-based models for classifying skin lesions from dermatoscopic images.",
+      "tags": ["Deep Learning", "Computer Vision", "Medical Imaging"]
+    },
+    {
+      "id": "project-thesis-002",
+      "title": "Graph Neural Networks for Knowledge Graph Completion",
+      "type": "PhD Thesis",
+      "student": "PhD Candidate",
+      "supervisor": "Giannis Tzimas",
+      "year": 2024,
+      "status": "Ongoing",
+      "description": "Novel GNN architectures for link prediction and entity alignment in large-scale knowledge graphs.",
+      "tags": ["Graph Neural Networks", "Knowledge Graphs", "Deep Learning"]
+    },
+    {
+      "id": "project-capstone-001",
+      "title": "Sentiment Analysis Dashboard for Social Media",
+      "type": "Capstone Project",
+      "student": "Student Team (4 members)",
+      "supervisor": "Isidoros Perikos",
+      "year": 2024,
+      "status": "Completed",
+      "description": "Real-time sentiment analysis and visualization platform for Greek social media content.",
+      "tags": ["NLP", "Sentiment Analysis", "Web Development"],
+      "githubUrl": "",
+      "demoUrl": ""
+    }
+  ],
+  "training": [
+    {
+      "id": "training-python-ml",
+      "title": "Python for Machine Learning",
+      "type": "Workshop",
+      "duration": "2 days (16 hours)",
+      "level": "Beginner to Intermediate",
+      "description": "Hands-on workshop covering Python programming, NumPy, Pandas, and scikit-learn for ML applications.",
+      "nextOffering": "2024-12-10",
+      "instructor": "Lab Teaching Assistants",
+      "registrationUrl": ""
+    },
+    {
+      "id": "training-deep-learning",
+      "title": "Deep Learning Bootcamp",
+      "type": "Summer School",
+      "duration": "1 week (40 hours)",
+      "level": "Intermediate to Advanced",
+      "description": "Intensive bootcamp on modern deep learning, covering CNNs, RNNs, Transformers, and practical implementation.",
+      "nextOffering": "Summer 2025",
+      "instructor": "Multiple Faculty Members",
+      "registrationUrl": ""
+    },
+    {
+      "id": "training-spark",
+      "title": "Apache Spark for Big Data",
+      "type": "Tutorial Series",
+      "duration": "4 sessions (12 hours)",
+      "level": "Intermediate",
+      "description": "Tutorial series on distributed data processing with Apache Spark, including RDDs, DataFrames, and MLlib.",
+      "nextOffering": "2025-01-15",
+      "instructor": "Giannis Tzimas",
+      "registrationUrl": ""
+    }
+  ]
+}

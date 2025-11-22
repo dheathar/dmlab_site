@@ -1,0 +1,170 @@
+{
+  "computing": [
+    {
+      "id": "gpu-server-1",
+      "name": "High-Performance GPU Server",
+      "type": "GPU Computing",
+      "specs": {
+        "gpus": "4x NVIDIA A100 80GB",
+        "cpu": "2x AMD EPYC 7763 (128 cores)",
+        "ram": "1TB DDR4",
+        "storage": "20TB NVMe SSD",
+        "network": "100Gbps Ethernet"
+      },
+      "purpose": "Deep learning model training, large-scale neural network research",
+      "availability": "Shared - Lab Members",
+      "software": ["PyTorch", "TensorFlow", "JAX", "CUDA 12.0"],
+      "icon": "server"
+    },
+    {
+      "id": "cluster-1",
+      "name": "Computing Cluster",
+      "type": "HPC Cluster",
+      "specs": {
+        "nodes": "32 compute nodes",
+        "cpu": "AMD EPYC 7543 (32 cores per node)",
+        "totalCores": "1024 cores",
+        "ram": "256GB per node (8TB total)",
+        "storage": "500TB distributed filesystem",
+        "interconnect": "InfiniBand HDR 200Gbps"
+      },
+      "purpose": "Distributed computing, big data processing, parallel simulations",
+      "availability": "Shared - University-wide",
+      "software": ["SLURM", "Apache Spark", "Hadoop", "MPI"],
+      "icon": "grid"
+    },
+    {
+      "id": "storage-1",
+      "name": "Research Data Storage",
+      "type": "Storage Infrastructure",
+      "specs": {
+        "capacity": "1PB",
+        "type": "Object Storage + Block Storage",
+        "redundancy": "Triple replication",
+        "backup": "Daily incremental, weekly full"
+      },
+      "purpose": "Long-term research data archival, dataset hosting",
+      "availability": "Lab Members + Collaborators",
+      "software": ["MinIO", "Ceph", "NFS"],
+      "icon": "hard-drive"
+    }
+  ],
+  "software": [
+    {
+      "category": "AI/ML Frameworks",
+      "tools": [
+        "PyTorch 2.0+",
+        "TensorFlow 2.15+",
+        "scikit-learn",
+        "Hugging Face Transformers",
+        "JAX",
+        "XGBoost",
+        "LightGBM"
+      ]
+    },
+    {
+      "category": "Big Data & Analytics",
+      "tools": [
+        "Apache Spark",
+        "Apache Hadoop",
+        "Apache Kafka",
+        "Elasticsearch",
+        "PostgreSQL",
+        "MongoDB",
+        "Neo4j (Graph Database)"
+      ]
+    },
+    {
+      "category": "Development & DevOps",
+      "tools": [
+        "Git / GitLab",
+        "Docker",
+        "Kubernetes",
+        "Jupyter Lab",
+        "VS Code",
+        "CI/CD Pipelines (GitLab CI)"
+      ]
+    },
+    {
+      "category": "Visualization",
+      "tools": [
+        "Matplotlib",
+        "Plotly",
+        "D3.js",
+        "Tableau",
+        "Grafana",
+        "TensorBoard"
+      ]
+    }
+  ],
+  "labTools": [
+    {
+      "id": "tool-annotator",
+      "name": "DM Annotator",
+      "description": "Web-based annotation tool for machine learning datasets with support for text, image, and video data",
+      "type": "Data Annotation",
+      "status": "Production",
+      "technologies": ["React", "Python", "FastAPI", "PostgreSQL"],
+      "githubUrl": "",
+      "docsUrl": "",
+      "demoUrl": "",
+      "image": "/assets/images/tools/annotator.png"
+    },
+    {
+      "id": "tool-rag-toolkit",
+      "name": "RAG Toolkit",
+      "description": "Retrieval-Augmented Generation toolkit for building LLM-powered applications with custom knowledge bases",
+      "type": "LLM/RAG",
+      "status": "Beta",
+      "technologies": ["Python", "LangChain", "ChromaDB", "OpenAI API"],
+      "githubUrl": "",
+      "docsUrl": "",
+      "demoUrl": "",
+      "image": "/assets/images/tools/rag-toolkit.png"
+    },
+    {
+      "id": "tool-sentiment-analyzer",
+      "name": "Greek Sentiment Analyzer",
+      "description": "Specialized sentiment analysis library for Greek language text with pre-trained models",
+      "type": "NLP",
+      "status": "Production",
+      "technologies": ["Python", "spaCy", "PyTorch", "FastAPI"],
+      "githubUrl": "",
+      "docsUrl": "",
+      "demoUrl": "",
+      "image": "/assets/images/tools/sentiment-analyzer.png"
+    },
+    {
+      "id": "tool-knowledge-graph-builder",
+      "name": "Knowledge Graph Builder",
+      "description": "Tool for constructing and querying domain-specific knowledge graphs from unstructured data",
+      "type": "Knowledge Engineering",
+      "status": "Alpha",
+      "technologies": ["Python", "Neo4j", "RDF", "SPARQL"],
+      "githubUrl": "",
+      "docsUrl": "",
+      "demoUrl": "",
+      "image": "/assets/images/tools/kg-builder.png"
+    }
+  ],
+  "services": [
+    {
+      "name": "JupyterHub",
+      "description": "Multi-user Jupyter notebook environment for collaborative research",
+      "url": "https://jupyter.dmlab.uop.gr",
+      "access": "Lab Members"
+    },
+    {
+      "name": "GitLab",
+      "description": "Private GitLab instance for version control and CI/CD",
+      "url": "https://gitlab.dmlab.uop.gr",
+      "access": "Lab Members + Collaborators"
+    },
+    {
+      "name": "MLflow",
+      "description": "Experiment tracking and model registry for ML projects",
+      "url": "https://mlflow.dmlab.uop.gr",
+      "access": "Lab Members"
+    }
+  ]
+}

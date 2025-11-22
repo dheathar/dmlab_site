@@ -1,0 +1,391 @@
+/* ========================================
+   Responsive Design
+   Mobile & Tablet Optimizations
+   ======================================== */
+
+/* Tablet (Portrait & Landscape) */
+@media screen and (max-width: 1024px) {
+    :root {
+        --font-size-7xl: 3.5rem;
+        --font-size-6xl: 3rem;
+        --font-size-5xl: 2.5rem;
+        --font-size-4xl: 2rem;
+        --spacing-5xl: 6rem;
+        --spacing-4xl: 4rem;
+        --spacing-3xl: 3rem;
+    }
+
+    .nav-menu {
+        gap: var(--spacing-lg);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-6xl);
+    }
+
+    .features-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-2xl);
+    }
+}
+
+/* Mobile (Large Phones) */
+@media screen and (max-width: 768px) {
+    :root {
+        --font-size-7xl: 2.5rem;
+        --font-size-6xl: 2rem;
+        --font-size-5xl: 1.875rem;
+        --font-size-4xl: 1.5rem;
+        --spacing-5xl: 4rem;
+        --spacing-4xl: 3rem;
+        --spacing-3xl: 2rem;
+    }
+
+    /* Hide sidebar on mobile */
+    .sidebar-nav {
+        display: none;
+    }
+
+    /* Adjust nav container on mobile */
+    .nav-container {
+        margin-left: 0;
+    }
+
+    /* Switch to vertical scroll on mobile */
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    .scroll-container {
+        position: static;
+        overflow: visible;
+        height: auto;
+        scroll-snap-type: none;
+        left: 0;
+        width: 100%;
+    }
+
+    .scroll-content {
+        display: block;
+        height: auto;
+    }
+
+    .panel {
+        flex: none;
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: var(--spacing-3xl) var(--spacing-lg);
+        scroll-snap-align: none;
+    }
+
+    /* Navigation */
+    .nav-container {
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .nav-menu {
+        display: none; /* Show hamburger menu instead */
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    /* Mobile menu button */
+    .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--color-text-primary);
+        font-size: var(--font-size-2xl);
+        cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: var(--font-size-5xl);
+        line-height: 1.1;
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .hero-cta .btn-primary,
+    .hero-cta .btn-outline {
+        width: 100%;
+    }
+
+    .hero-metrics {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    /* Social Proof */
+    .proof-logos {
+        gap: var(--spacing-xl);
+    }
+
+    .logo-item img {
+        height: 40px;
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .feature-card {
+        padding: var(--spacing-lg);
+    }
+
+    .feature-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .feature-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    /* Team Grid */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .team-card {
+        padding: var(--spacing-lg);
+    }
+
+    .team-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Publications */
+    .publication-item {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        padding: var(--spacing-lg);
+    }
+
+    .pub-year {
+        min-width: auto;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    /* Hide scroll indicators on mobile */
+    .scroll-progress {
+        display: none;
+    }
+
+    .scroll-dots {
+        display: none;
+    }
+
+    .scroll-hint {
+        display: none;
+    }
+
+    /* Section spacing */
+    .section-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .section-subtitle {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-2xl);
+    }
+}
+
+/* Mobile (Small Phones) */
+@media screen and (max-width: 480px) {
+    :root {
+        --font-size-7xl: 2rem;
+        --font-size-6xl: 1.75rem;
+        --font-size-5xl: 1.5rem;
+        --font-size-4xl: 1.25rem;
+        --spacing-xl: 1.5rem;
+        --spacing-2xl: 2rem;
+    }
+
+    .panel {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    .section-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .feature-card,
+    .project-card,
+    .team-card,
+    .publication-item {
+        padding: var(--spacing-md);
+    }
+
+    .nav-logo a {
+        font-size: var(--font-size-lg);
+    }
+
+    .proof-logos {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+}
+
+/* Landscape orientation adjustments */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .panel {
+        height: auto;
+        min-height: auto;
+        padding: var(--spacing-2xl) var(--spacing-xl);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-5xl);
+    }
+
+    .hero-metrics {
+        flex-direction: row;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-title,
+    .section-title {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Dark mode support (if system prefers dark) */
+@media (prefers-color-scheme: dark) {
+    /* Colors are already dark by default */
+    /* Add any dark mode specific adjustments here */
+}
+
+/* Print styles */
+@media print {
+    body {
+        overflow: visible;
+        height: auto;
+    }
+
+    .scroll-container {
+        position: static;
+        overflow: visible;
+        height: auto;
+    }
+
+    .scroll-content {
+        display: block;
+    }
+
+    .panel {
+        page-break-after: always;
+        height: auto;
+    }
+
+    .navbar,
+    .scroll-progress,
+    .scroll-dots,
+    .scroll-hint {
+        display: none;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        border: 1px solid #000;
+        color: #000;
+    }
+}
+
+/* Accessibility: Focus styles for keyboard navigation */
+@media (prefers-reduced-motion: no-preference) {
+    a:focus,
+    button:focus,
+    .btn-primary:focus,
+    .btn-secondary:focus,
+    .btn-outline:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        min-height: 44px; /* Minimum touch target size */
+    }
+
+    .feature-card,
+    .project-card {
+        cursor: default;
+    }
+
+    /* Remove hover effects on touch devices */
+    .feature-card:hover,
+    .project-card:hover,
+    .team-card:hover {
+        transform: none;
+    }
+}

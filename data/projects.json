@@ -1,0 +1,284 @@
+{
+  "projects": [
+    {
+      "id": "eu-almpo",
+      "title": "EU-ALMPO",
+      "fullTitle": "European Labour Market Policy Observatory",
+      "type": "EU-funded",
+      "program": "Horizon Europe",
+      "duration": {
+        "start": "2025-01-01",
+        "end": "2027-12-31",
+        "ongoing": true
+      },
+      "status": "active",
+      "funding": "€2M",
+      "role": "Lead Partner",
+      "description": "EU initiative using AI and centralized data to enhance Active Labour Market Policies across Europe.",
+      "objectives": [
+        "Develop AI-powered labour market analysis tools",
+        "Create policy recommendation systems",
+        "Build data-driven dashboards for policymakers",
+        "Establish pan-European labour market monitoring"
+      ],
+      "keyInnovations": [
+        "Machine learning models for labor market prediction",
+        "Real-time data integration from multiple sources",
+        "Interactive visualization dashboards",
+        "Automated policy impact assessment tools"
+      ],
+      "partners": [
+        {
+          "name": "University of Peloponnese",
+          "country": "Greece",
+          "logo": "/assets/images/partners/uop.png"
+        }
+      ],
+      "image": "/assets/images/projects/eu-almpo.jpg",
+      "logo": "https://eu-almpo.eu/wp-content/uploads/2025/02/rgb-logo.svg",
+      "website": "https://eu-almpo.eu/",
+      "relatedPublications": [],
+      "tags": ["Labour Market", "AI", "Big Data", "Policy Analysis"]
+    },
+    {
+      "id": "train4blue",
+      "title": "TRAIN4BLUE",
+      "fullTitle": "Empowering Smart Careers in the Blue Economy",
+      "type": "EU-funded",
+      "program": "Interreg ADRION",
+      "duration": {
+        "start": "2025-06-01",
+        "end": "2027-06-30",
+        "ongoing": true
+      },
+      "status": "active",
+      "funding": "€1.5M",
+      "role": "Partner",
+      "description": "Program for empowering smart careers in the Blue Economy through focused training, skill enhancement, and entrepreneurial support.",
+      "objectives": [
+        "Develop specialized training programs for blue economy careers",
+        "Create skill enhancement frameworks for maritime professionals",
+        "Build entrepreneurial support systems",
+        "Foster sustainable blue economy development"
+      ],
+      "keyInnovations": [
+        "Targeted vocational training modules",
+        "Digital skills certification for maritime sector",
+        "Entrepreneurship incubation programs",
+        "Cross-border collaboration networks"
+      ],
+      "partners": [
+        {
+          "name": "University of Peloponnese",
+          "country": "Greece",
+          "logo": "/assets/images/partners/uop.png"
+        }
+      ],
+      "image": "/assets/images/projects/train4blue.jpg",
+      "logo": "/assets/images/logos/train4blue-logo.png",
+      "website": "",
+      "relatedPublications": [],
+      "tags": ["Blue Economy", "Training", "Skills Development", "Entrepreneurship"]
+    },
+    {
+      "id": "growth4blue",
+      "title": "Growth4Blue",
+      "fullTitle": "Sustainable Growth in Blue Economy Sectors",
+      "type": "EU-funded",
+      "program": "Interreg IPA ADRION",
+      "duration": {
+        "start": "2024-09-01",
+        "end": "2027-08-31",
+        "ongoing": true
+      },
+      "status": "active",
+      "funding": "€1.2M",
+      "role": "Partner",
+      "description": "Transnational initiative focused on sustainable blue growth in the Adriatic-Ionian region through data-driven solutions for maritime and aquaculture industries.",
+      "objectives": [
+        "Develop predictive models for aquaculture",
+        "Create sustainability assessment tools",
+        "Build data platforms for blue economy monitoring",
+        "Support evidence-based policy making"
+      ],
+      "keyInnovations": [
+        "IoT sensor data integration",
+        "Environmental impact prediction models",
+        "Sustainability scoring algorithms",
+        "Interactive maritime data platforms"
+      ],
+      "partners": [
+        {
+          "name": "University of Peloponnese",
+          "country": "Greece",
+          "logo": "/assets/images/partners/uop.png"
+        }
+      ],
+      "image": "/assets/images/projects/growth4blue.jpg",
+      "logo": "/assets/images/logos/growth4blue-logo.png",
+      "website": "https://growth4blue.eu/",
+      "relatedPublications": [],
+      "tags": ["Blue Economy", "Sustainability", "IoT", "Aquaculture"]
+    },
+    {
+      "id": "microidea",
+      "title": "MicroIdea",
+      "fullTitle": "European Micro-credential System for Skills Recognition in Tourism",
+      "type": "EU-funded",
+      "program": "Erasmus+",
+      "duration": {
+        "start": "2024-01-01",
+        "end": "2026-12-31",
+        "ongoing": true
+      },
+      "status": "active",
+      "funding": "€400K",
+      "role": "Lead Partner",
+      "description": "European micro-credential system for skills recognition in the tourism sector through blockchain-based platform for lifelong learning and skill certification.",
+      "objectives": [
+        "Design blockchain-based credential system",
+        "Create micro-learning modules for tourism sector",
+        "Develop skill verification protocols",
+        "Establish interoperable credential standards"
+      ],
+      "keyInnovations": [
+        "Blockchain credential issuance",
+        "AI-powered skill assessment",
+        "Decentralized verification system",
+        "Competency-based learning paths"
+      ],
+      "partners": [
+        {
+          "name": "University of Peloponnese",
+          "country": "Greece",
+          "logo": "/assets/images/partners/uop.png"
+        }
+      ],
+      "image": "/assets/images/projects/microidea.jpg",
+      "logo": "https://micro-idea.eu/wp-content/uploads/2024/03/logo-Microidea-white.svg",
+      "website": "https://micro-idea.eu/",
+      "relatedPublications": [],
+      "tags": ["Education", "Blockchain", "Micro-credentials", "Tourism"]
+    },
+    {
+      "id": "agora",
+      "title": "AGORA",
+      "fullTitle": "Advanced Governance and Open Research Architectures",
+      "type": "EU-funded",
+      "program": "Erasmus+",
+      "duration": {
+        "start": "2023-09-01",
+        "end": "2025-08-31",
+        "ongoing": true
+      },
+      "status": "active",
+      "funding": "€800K",
+      "role": "Coordinator",
+      "description": "Digital transformation in higher education governance using open data and collaborative platforms.",
+      "objectives": [
+        "Develop open governance frameworks for universities",
+        "Create collaborative research platforms",
+        "Implement data-driven decision-making systems",
+        "Foster international academic cooperation"
+      ],
+      "keyInnovations": [
+        "Open research data architectures",
+        "Collaborative governance platforms",
+        "AI-assisted decision support systems",
+        "Blockchain-based credential verification"
+      ],
+      "partners": [
+        {
+          "name": "University of Peloponnese",
+          "country": "Greece",
+          "logo": "/assets/images/partners/uop.png"
+        }
+      ],
+      "image": "/assets/images/projects/agora.jpg",
+      "logo": "/assets/images/logos/agora-logo.png",
+      "website": "https://agora-project.eu/",
+      "relatedPublications": [],
+      "tags": ["Education", "Open Data", "Governance", "Digital Transformation"]
+    },
+    {
+      "id": "for4opt",
+      "title": "For4Opt",
+      "fullTitle": "Forecasting for Optimization in Energy Systems",
+      "type": "EU-funded",
+      "program": "Horizon 2020",
+      "duration": {
+        "start": "2022-01-01",
+        "end": "2024-12-31",
+        "ongoing": false
+      },
+      "status": "completed",
+      "funding": "€1.5M",
+      "role": "Research Partner",
+      "description": "AI-driven forecasting and optimization for sustainable energy management and distribution.",
+      "objectives": [
+        "Develop ML models for energy demand forecasting",
+        "Create optimization algorithms for grid management",
+        "Integrate renewable energy sources efficiently",
+        "Reduce carbon footprint through smart optimization"
+      ],
+      "keyInnovations": [
+        "Deep learning for multi-horizon forecasting",
+        "Hybrid optimization techniques",
+        "Real-time grid balancing algorithms",
+        "Renewable energy integration frameworks"
+      ],
+      "partners": [
+        {
+          "name": "University of Peloponnese",
+          "country": "Greece",
+          "logo": "/assets/images/partners/uop.png"
+        }
+      ],
+      "image": "/assets/images/projects/for4opt.jpg",
+      "logo": "/assets/images/logos/for4opt-logo.png",
+      "website": "https://for4opt.eu/",
+      "relatedPublications": ["pub-2020-01"],
+      "tags": ["Energy", "Optimization", "Forecasting", "Sustainability"]
+    },
+    {
+      "id": "project-19-20",
+      "title": "Sentiment Analysis in Education",
+      "fullTitle": "Advanced Sentiment Analysis for Educational Platforms",
+      "type": "Internal",
+      "program": "University Research Grant",
+      "duration": {
+        "start": "2019-09-01",
+        "end": "2020-08-31",
+        "ongoing": false
+      },
+      "status": "completed",
+      "funding": "€50K",
+      "role": "Lead Researcher",
+      "description": "Development of sentiment analysis tools for educational platforms using NLP and machine learning.",
+      "objectives": [
+        "Develop NLP models for educational content",
+        "Create teacher sentiment monitoring tools",
+        "Build student engagement prediction systems",
+        "Improve e-learning platform effectiveness"
+      ],
+      "keyInnovations": [
+        "Greek language sentiment analysis",
+        "Hidden Markov Models for sentiment tracking",
+        "Real-time feedback analysis",
+        "Multi-modal sentiment detection"
+      ],
+      "partners": [
+        {
+          "name": "University of Peloponnese",
+          "country": "Greece",
+          "logo": "/assets/images/partners/uop.png"
+        }
+      ],
+      "image": "/assets/images/projects/sentiment-analysis.jpg",
+      "logo": "/assets/images/logos/uop-logo.png",
+      "website": "",
+      "relatedPublications": ["pub-2019-03", "pub-2019-04", "pub-2019-06"],
+      "tags": ["Sentiment Analysis", "Education", "NLP", "Machine Learning"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "dm-lab-website",
+  "version": "2.0.0",
+  "description": "Data & Media Laboratory website - University of Peloponnese",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write \"**/*.{js,json,css,html}\""
+  },
+  "keywords": [
+    "research",
+    "ai",
+    "machine-learning",
+    "data-science",
+    "university"
+  ],
+  "author": "Data & Media Laboratory, University of Peloponnese",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.1"
+  },
+  "dependencies": {}
+}

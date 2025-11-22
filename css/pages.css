@@ -1,0 +1,559 @@
+/* ========================================
+   Standard Pages Styles (Vertical Scroll)
+   For Research, Projects, Team, Publications, About, Contact
+   ======================================== */
+
+/* Page wrapper - accounts for sidebar */
+.page-wrapper {
+    margin-left: 260px; /* Sidebar width */
+    min-height: 100vh;
+    background: var(--color-bg-primary);
+    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-x: hidden;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 260px;
+    bottom: 0;
+}
+
+/* Page layout */
+.page-container {
+    min-height: 100vh;
+    padding-top: 80px; /* Account for fixed navbar */
+    background: var(--color-bg-primary);
+}
+
+.page-header {
+    padding: var(--spacing-5xl) var(--spacing-xl) var(--spacing-3xl);
+    background: var(--color-bg-secondary);
+    text-align: center;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.page-title {
+    font-size: var(--font-size-6xl);
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.page-subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-4xl) var(--spacing-xl);
+}
+
+/* Publications page - wider content */
+.page-wrapper .page-content:has(#publicationsContainer) {
+    max-width: 1400px;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+}
+
+/* Team page - wider content */
+.page-wrapper .page-content:has(.team-members) {
+    max-width: 1400px;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+}
+
+/* Projects page - wider content */
+.page-wrapper .page-content:has(.project-details) {
+    max-width: 1400px;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+}
+
+/* Content sections */
+.content-section {
+    margin-bottom: var(--spacing-5xl);
+}
+
+.content-section:last-child {
+    margin-bottom: 0;
+}
+
+.section-header {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.section-header h2 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.section-header p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+}
+
+/* Research areas (detailed) */
+.research-areas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+}
+
+.research-area {
+    padding: var(--spacing-3xl);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+.research-area h3 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+}
+
+.research-area-content {
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+}
+
+.research-area-topics {
+    margin-top: var(--spacing-xl);
+}
+
+.research-area-topics h4 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.research-area-topics ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.research-area-topics li {
+    padding-left: var(--spacing-lg);
+    position: relative;
+    color: var(--color-text-secondary);
+}
+
+.research-area-topics li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+/* Project details */
+.project-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.project-detail {
+    padding: var(--spacing-lg);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.project-detail:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: var(--color-primary);
+}
+
+.project-detail-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.project-detail-header h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-meta-label {
+    font-size: 10px;
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+}
+
+.project-meta-value {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+.project-detail-content {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    font-size: var(--font-size-sm);
+}
+
+/* Project logo */
+.project-logo {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Special background for MicroIdea logo (white SVG) */
+[data-project-id="microidea"] .project-logo {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 6px;
+}
+
+/* Dark Mode: Adjust logo backgrounds */
+[data-theme="dark"] .project-logo {
+    background: var(--color-bg-tertiary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] [data-project-id="microidea"] .project-logo {
+    background: linear-gradient(135deg, #5568d3 0%, #63408a 100%);
+}
+
+/* Project full title */
+.project-full-title {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+    font-style: italic;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Project website button */
+.project-website-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+    padding: 8px 16px;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 8px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.project-website-btn:hover {
+    background: #1d4ed8;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.project-website-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Status badges */
+.status-active {
+    color: #059669 !important;
+    font-weight: 700 !important;
+}
+
+.status-completed {
+    color: var(--color-text-tertiary) !important;
+}
+
+/* Team members */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+/* Core Team - wider layout to match 4-box width */
+.content-section .team-members.core-team {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    padding: var(--spacing-lg);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.team-member:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.team-member-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--color-border);
+}
+
+.team-member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member-name {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+}
+
+.team-member-title {
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.team-member-bio {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+}
+
+.team-member-links {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+}
+
+.team-member-links a {
+    color: var(--color-text-tertiary);
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-fast);
+}
+
+.team-member-links a:hover {
+    color: var(--color-primary);
+}
+
+/* Publications */
+.publications-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+.publication {
+    padding: var(--spacing-xl);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    transition: all var(--transition-base);
+}
+
+.publication:hover {
+    border-color: var(--color-primary);
+    transform: translateX(4px);
+}
+
+.publication-header {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.publication-year {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-text-tertiary);
+    min-width: 60px;
+}
+
+.publication-content {
+    flex: 1;
+}
+
+.publication-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.publication-authors {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.publication-venue {
+    color: var(--color-text-tertiary);
+    font-size: var(--font-size-sm);
+    font-style: italic;
+    margin-bottom: var(--spacing-md);
+}
+
+.publication-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.publication-links a {
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: var(--spacing-3xl);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-xl);
+}
+
+.form-label {
+    display: block;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: var(--spacing-md);
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    color: var(--color-text-primary);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-base);
+    transition: border-color var(--transition-fast);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-submit {
+    width: 100%;
+}
+
+/* Contact info */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-4xl);
+}
+
+.contact-info-item {
+    padding: var(--spacing-xl);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.contact-info-item h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+.contact-info-item p {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    .page-wrapper {
+        margin-left: 0; /* Remove sidebar margin on mobile */
+    }
+
+    .page-header {
+        padding: var(--spacing-3xl) var(--spacing-lg) var(--spacing-2xl);
+    }
+
+    .page-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .page-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    .page-content {
+        padding: var(--spacing-2xl) var(--spacing-lg);
+    }
+
+    .research-area,
+    .project-detail,
+    .contact-form {
+        padding: var(--spacing-xl);
+    }
+
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+
+    .project-details {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}

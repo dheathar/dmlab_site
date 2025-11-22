@@ -1,0 +1,164 @@
+{
+  "site": {
+    "name": "Data & Media Laboratory",
+    "shortName": "DM Lab",
+    "tagline": "Advancing AI, Data Science, and Digital Innovation",
+    "university": "University of Peloponnese",
+    "department": "Department of Informatics and Telecommunications",
+    "established": "2010",
+    "description": "The Data & Media Laboratory (DM Lab) is a leading research group focused on artificial intelligence, machine learning, big data analytics, and web engineering. We conduct cutting-edge research and develop innovative solutions for real-world challenges.",
+    "logo": "/assets/images/dm-lab-logo.png",
+    "logoAlt": "/assets/images/dm-lab-logo-white.png",
+    "favicon": "/assets/images/favicon.ico"
+  },
+  "contact": {
+    "email": "info@dmlab.uop.gr",
+    "phone": "+30 2710 372000",
+    "fax": "+30 2710 372739",
+    "address": {
+      "street": "End of Karaiskaki Street",
+      "city": "Tripoli",
+      "postalCode": "22131",
+      "country": "Greece",
+      "building": "Building B, 3rd Floor"
+    },
+    "coordinates": {
+      "latitude": 37.5079,
+      "longitude": 22.3747
+    },
+    "officeHours": {
+      "weekdays": "Monday - Friday: 9:00 AM - 5:00 PM",
+      "weekend": "Saturday - Sunday: Closed"
+    }
+  },
+  "social": {
+    "twitter": "",
+    "linkedin": "",
+    "github": "https://github.com/dmlab-uop",
+    "youtube": "",
+    "facebook": "",
+    "researchGate": "",
+    "googleScholar": ""
+  },
+  "theme": {
+    "primaryColor": "#2563eb",
+    "secondaryColor": "#0EA5E9",
+    "accentCyan": "#06B6D4",
+    "accentMagenta": "#EC4899",
+    "deepNavy": "#1E3A8A",
+    "fontPrimary": "Montserrat",
+    "fontSecondary": "Lato",
+    "fontTertiary": "Manrope",
+    "fontMono": "Fragment Mono"
+  },
+  "navigation": {
+    "main": [
+      {
+        "label": "Home",
+        "url": "/index.html",
+        "icon": "home"
+      },
+      {
+        "label": "About",
+        "url": "/pages/about.html",
+        "icon": "info"
+      },
+      {
+        "label": "People",
+        "url": "/pages/team.html",
+        "icon": "users"
+      },
+      {
+        "label": "Research",
+        "url": "/pages/research.html",
+        "icon": "search"
+      },
+      {
+        "label": "Projects",
+        "url": "/pages/projects.html",
+        "icon": "briefcase"
+      },
+      {
+        "label": "Publications",
+        "url": "/pages/publications.html",
+        "icon": "book"
+      },
+      {
+        "label": "Infrastructure",
+        "url": "/pages/infrastructure.html",
+        "icon": "server"
+      },
+      {
+        "label": "News & Talks",
+        "url": "/pages/news.html",
+        "icon": "rss"
+      },
+      {
+        "label": "Teaching",
+        "url": "/pages/teaching.html",
+        "icon": "book-open"
+      },
+      {
+        "label": "Contact",
+        "url": "/pages/contact.html",
+        "icon": "mail"
+      }
+    ],
+    "groups": [
+      {
+        "name": "About Lab",
+        "items": ["Home", "About", "Infrastructure"]
+      },
+      {
+        "name": "People & Research",
+        "items": ["People", "Research", "Projects"]
+      },
+      {
+        "name": "Output",
+        "items": ["Publications", "News & Talks"]
+      },
+      {
+        "name": "Engage",
+        "items": ["Teaching", "Contact"]
+      }
+    ]
+  },
+  "seo": {
+    "keywords": [
+      "artificial intelligence",
+      "machine learning",
+      "big data",
+      "data science",
+      "natural language processing",
+      "deep learning",
+      "web engineering",
+      "knowledge graphs",
+      "semantic web",
+      "educational technology",
+      "University of Peloponnese",
+      "research lab",
+      "AI research Greece"
+    ],
+    "defaultDescription": "Data & Media Laboratory at the University of Peloponnese - Research in AI, machine learning, big data analytics, and web engineering.",
+    "ogImage": "/assets/images/og-image.jpg",
+    "twitterCard": "summary_large_image"
+  },
+  "analytics": {
+    "googleAnalytics": "",
+    "enabled": false
+  },
+  "features": {
+    "darkMode": true,
+    "searchEnabled": true,
+    "newsletterSignup": false,
+    "multiLanguage": false,
+    "languages": ["en"]
+  },
+  "metrics": {
+    "researchAreas": 6,
+    "activeProjects": 10,
+    "publications": "100+",
+    "teamMembers": 25,
+    "fundingEU": true
+  }
+}
