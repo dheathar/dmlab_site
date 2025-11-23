@@ -691,8 +691,7 @@ img {
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: var(--color-bg-secondary);
     border: 1px solid var(--color-border);
     border-radius: 16px;
     padding: var(--spacing-2xl);
@@ -706,15 +705,7 @@ img {
     box-shadow: 0 12px 24px rgba(37, 99, 235, 0.15), 0 4px 8px rgba(37, 99, 235, 0.1);
 }
 
-/* Dark Mode: Feature cards */
-[data-theme="dark"] .feature-card {
-    background: rgba(51, 65, 85, 0.5);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
 [data-theme="dark"] .feature-card:hover {
-    background: rgba(51, 65, 85, 0.7);
     box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25), 0 4px 8px rgba(37, 99, 235, 0.15);
 }
 
@@ -793,8 +784,7 @@ img {
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: var(--color-bg-secondary);
     border: 1px solid var(--color-border);
     border-radius: 16px;
     overflow: hidden;
@@ -808,15 +798,7 @@ img {
     border-color: var(--color-accent-green);
 }
 
-/* Dark Mode: Project cards */
-[data-theme="dark"] .project-card {
-    background: rgba(51, 65, 85, 0.5);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
 [data-theme="dark"] .project-card:hover {
-    background: rgba(51, 65, 85, 0.7);
     box-shadow: 0 12px 28px rgba(16, 185, 129, 0.25), 0 4px 8px rgba(16, 185, 129, 0.15);
 }
 
@@ -891,8 +873,7 @@ img {
 .team-card {
     text-align: center;
     padding: var(--spacing-xl);
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: var(--color-bg-secondary);
     border: 1px solid var(--color-border);
     border-radius: 16px;
     transition: all var(--transition-base);
@@ -905,15 +886,7 @@ img {
     box-shadow: 0 12px 28px rgba(245, 158, 11, 0.15), 0 4px 8px rgba(245, 158, 11, 0.1);
 }
 
-/* Dark Mode: Team cards */
-[data-theme="dark"] .team-card {
-    background: rgba(51, 65, 85, 0.5);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
 [data-theme="dark"] .team-card:hover {
-    background: rgba(51, 65, 85, 0.7);
     box-shadow: 0 12px 28px rgba(245, 158, 11, 0.25), 0 4px 8px rgba(245, 158, 11, 0.15);
 }
 
