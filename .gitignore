@@ -39,3 +39,9 @@ yarn-error.log*
 # Temporary files
 *.tmp
 .cache/
+
+# Moat task system
+.moat/
+
+# Claude Code configuration
+.claude/

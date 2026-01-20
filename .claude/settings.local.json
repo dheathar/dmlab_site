@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(dir:*)",
-      "Bash(gh repo create:*)"
+      "Bash(gh repo create:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:scholar.google.com)",
+      "Bash(git -C \"C:/Users/panos/workspace/dm_lab_site\" show HEAD:css/main.css)",
+      "Bash(git -C \"C:/Users/panos/workspace/dm_lab_site\" checkout HEAD -- css/main.css)",
+      "Bash(grep:*)",
+      "Bash(del /q cssresponsive.css csspublications.css csspages.css csshorizontal-scroll.css cssmain.css)"
     ],
     "deny": [],
     "ask": []

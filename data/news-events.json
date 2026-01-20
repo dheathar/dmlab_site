@@ -1,0 +1,79 @@
+{
+  "events": [
+    {
+      "date": "September 15, 2024",
+      "title": "AI in Education Workshop",
+      "description": "Hands-on workshop exploring the latest AI tools and methodologies for enhancing educational platforms and learning outcomes.",
+      "location": "DM Lab, Room A201"
+    },
+    {
+      "date": "October 5, 2024",
+      "title": "Big Data Analytics Seminar",
+      "description": "Guest lecture series on advanced big data processing techniques and real-world applications in labor market analysis.",
+      "location": "University Auditorium"
+    },
+    {
+      "date": "November 20, 2024",
+      "title": "Annual Research Symposium",
+      "description": "Showcase of DM Lab research achievements, student presentations, and networking with industry partners.",
+      "location": "Conference Center, Building B"
+    }
+  ],
+  "talks": [
+    {
+      "date": "July 8, 2024",
+      "type": "Invited Talk",
+      "typeColor": "orange",
+      "title": "Sentiment Analysis in Educational Platforms",
+      "speaker": "Isidoros Perikos",
+      "description": "Exploring NLP techniques for understanding student feedback and improving learning experiences through sentiment-aware systems."
+    },
+    {
+      "date": "June 12, 2024",
+      "type": "Keynote",
+      "typeColor": "purple",
+      "title": "Machine Learning for Labour Market Analysis",
+      "speaker": "Giannis Tzimas",
+      "description": "Keynote presentation on applying ML algorithms to understand employment trends and optimize active labor market policies."
+    },
+    {
+      "date": "May 20, 2024",
+      "type": "Conference",
+      "typeColor": "green",
+      "title": "Scalable Data Pipelines for Digital Ecosystems",
+      "speaker": "Panagiotis Zervas",
+      "description": "Technical deep-dive into building robust data infrastructure for large-scale educational and social protection systems."
+    },
+    {
+      "date": "April 15, 2024",
+      "type": "Workshop",
+      "typeColor": "blue",
+      "title": "GPU-Accelerated Deep Learning",
+      "speaker": "DM Lab Research Team",
+      "description": "Hands-on workshop covering CUDA programming, PyTorch optimization, and best practices for training large models."
+    }
+  ],
+  "news": [
+    {
+      "date": "August 2024",
+      "title": "New Publication Accepted",
+      "description": "Our paper on \"Adaptive Learning Systems Using Reinforcement Learning\" has been accepted at the International Conference on AI in Education.",
+      "icon": "document",
+      "iconColor": "primary"
+    },
+    {
+      "date": "July 2024",
+      "title": "EU Project Grant Awarded",
+      "description": "DM Lab has been awarded a Horizon Europe grant for research on AI-powered digital ecosystems for social protection services.",
+      "icon": "award",
+      "iconColor": "green"
+    },
+    {
+      "date": "June 2024",
+      "title": "New PhD Positions Open",
+      "description": "We are recruiting PhD students for research in machine learning, NLP, and big data analytics. Applications open until September 30.",
+      "icon": "team",
+      "iconColor": "purple"
+    }
+  ]
+}

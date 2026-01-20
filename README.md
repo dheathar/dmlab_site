@@ -1,288 +1,213 @@
 # DM Lab Website
 
-A modern, responsive website for the Data & Media Laboratory at the University of Peloponnese, inspired by datalab.to's design aesthetic.
+A modern, responsive website for the Data & Media Laboratory at the University of Peloponnese, featuring a clean Tailwind CSS design with full dark mode support.
 
-## 🎨 Features
+## Features
 
-- **Horizontal Scroll Homepage**: Unique horizontal scrolling experience with smooth animations (inspired by datalab.to)
-- **Modern Design**: Dark theme with vibrant accent colors and smooth transitions
-- **Fully Responsive**: Adapts seamlessly from desktop to mobile devices
-- **6 Research Areas**: Comprehensive coverage of lab's research domains
-- **Project Showcase**: Detailed pages for EU-funded and research projects
-- **Team Profiles**: Showcase researchers and collaborators
-- **Publications**: Academic output and research contributions
-- **Contact Form**: Easy communication with the lab
+- **Modern Tailwind Design**: Clean, professional aesthetic using Tailwind CSS via CDN
+- **Dark Mode**: Full dark/light theme toggle with localStorage persistence
+- **Responsive Layout**: Adapts seamlessly from desktop to mobile devices
+- **Dynamic Content**: Publications and projects loaded from JSON data files
+- **Global Theme**: Centralized configuration for consistent styling across all pages
+- **Material Icons**: Google Material Symbols for consistent iconography
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 dm_lab_site/
-├── index.html              # Homepage with horizontal scroll
-├── css/
-│   ├── main.css            # Core styles, variables, components
-│   ├── horizontal-scroll.css  # Horizontal scroll mechanics
-│   ├── responsive.css      # Mobile/tablet responsive styles
-│   └── pages.css           # Styles for additional pages
+├── index.html              # Homepage with hero, news, research, projects
 ├── js/
-│   ├── scroll-manager.js   # Horizontal scrolling logic
-│   └── animations.js       # Interactive animations
+│   ├── tailwind-config.js  # Shared Tailwind configuration
+│   └── theme.js            # Dark mode toggle functionality
+├── data/
+│   ├── publications.json   # Publications data
+│   ├── projects.json       # Projects data
+│   └── news-events.json    # News and events data
 ├── pages/
-│   ├── research.html       # Research areas detail page
-│   ├── projects.html       # Projects showcase
-│   ├── team.html           # Team members
-│   ├── publications.html   # Research publications
+│   ├── research.html       # Research areas with sidebar navigation
+│   ├── projects.html       # Active/completed projects
+│   ├── publications.html   # Filterable publications list
+│   ├── team.html           # Team profiles
+│   ├── news.html           # News and events
 │   ├── about.html          # About the lab
-│   └── contact.html        # Contact form
-├── assets/
-│   ├── images/            # Images (placeholders currently)
-│   └── icons/             # Icons and graphics
-└── README.md              # This file
+│   ├── contact.html        # Contact form
+│   └── infrastructure.html # Lab infrastructure
+└── README.md
 ```
 
-## 🚀 Getting Started
+## Quick Start
 
-### Quick Start
+### Option 1: Simple HTTP Server (Python)
 
-1. **Open the site**: Simply open `index.html` in a modern web browser
-2. **Navigate**: Scroll horizontally (desktop) or vertically (mobile) through the homepage
-3. **Explore**: Click navigation links to visit additional pages
-
-### No Build Process Required
-
-This is a static HTML/CSS/JavaScript site with no dependencies. No npm install, no build step - just open and run!
-
-## 🎯 Customization Guide
-
-### 1. Update Content
-
-#### Replace Placeholder Images
-
-Currently using placeholder images from `via.placeholder.com`. Replace with actual images:
-
-- Team photos: Save to `assets/images/team/`
-- Project images: Save to `assets/images/projects/`
-- Logos: Save to `assets/images/logos/`
-
-Update image src attributes in HTML files:
-```html
-<!-- Before -->
-<img src="https://via.placeholder.com/200x200/1a1a1a/ffffff?text=PI" alt="Principal Investigator">
-
-<!-- After -->
-<img src="../assets/images/team/director.jpg" alt="Dr. Name">
+```bash
+cd dm_lab_site
+python -m http.server 8080
 ```
 
-#### Update Text Content
+Then open http://localhost:8080
 
-- **Team names**: Replace `[Name]` placeholders in `pages/team.html`
-- **Publications**: Add real publications in `pages/publications.html`
-- **Projects**: Customize project details in `pages/projects.html`
-- **Contact info**: Update email/phone in `pages/contact.html`
+### Option 2: Live Server (VS Code)
 
-### 2. Customize Colors
+1. Install "Live Server" extension in VS Code
+2. Right-click `index.html` → "Open with Live Server"
 
-Edit CSS variables in `css/main.css`:
+### Option 3: Direct File
 
-```css
-:root {
-    --color-primary: #2563eb;      /* Main brand color */
-    --color-secondary: #059669;    /* Secondary accent */
-    --color-accent: #dc2626;       /* Accent color */
+Simply open `index.html` in a modern web browser. Note: Some features (JSON loading) require a web server.
 
-    /* Change to your university colors */
-    --color-primary: #your-color;
-}
-```
+## Technology Stack
 
-### 3. Modify Typography
+- **Tailwind CSS** (via CDN) - Utility-first CSS framework
+- **Space Grotesk** - Google Font for typography
+- **Material Symbols** - Google icon library
+- **Vanilla JavaScript** - No framework dependencies
 
-Change fonts in `css/main.css`:
+## Theme Configuration
 
-```css
-:root {
-    --font-primary: 'YourFont', sans-serif;
-    --font-secondary: 'YourFont', sans-serif;
-}
-```
+The site uses a centralized theme configuration in `js/tailwind-config.js`:
 
-Update Google Fonts link in all HTML files:
-```html
-<link href="https://fonts.googleapis.com/css2?family=YourFont:wght@...">
-```
-
-### 4. Adjust Layouts
-
-#### Grid Layouts
-
-Modify grid columns in `css/main.css`:
-
-```css
-/* Change from 2 columns to 3 */
-.features-grid {
-    grid-template-columns: repeat(3, 1fr);
-}
-```
-
-#### Panel Order
-
-Reorder sections in `index.html` by moving `<section class="panel">` blocks.
-
-### 5. Configure Horizontal Scroll
-
-Disable horizontal scroll (use vertical only):
-
-In `css/horizontal-scroll.css`, comment out the scroll container styles:
-```css
-/* .scroll-container {
-    overflow-x: scroll;
-    ...
-} */
-```
-
-Adjust scroll speed in `js/scroll-manager.js`:
 ```javascript
-this.ease = 0.075;  // Lower = smoother, higher = faster
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                "primary": "#135bec",
+                "background-light": "#f6f6f8",
+                "background-dark": "#101622",
+                "card-light": "#ffffff",
+                "card-dark": "#1a212e"
+            },
+            fontFamily: {
+                "display": ["Space Grotesk", "sans-serif"]
+            }
+        }
+    }
+};
 ```
 
-## 📱 Mobile Responsiveness
+To customize colors, edit this file and the changes will apply across all pages.
 
-The site automatically switches from horizontal to vertical scrolling on mobile devices (< 768px width). Customize breakpoints in `css/responsive.css`:
+## Dark Mode
 
-```css
-@media screen and (max-width: 1024px) {
-    /* Tablet styles */
-}
+Dark mode is handled by `js/theme.js`:
+- Theme preference saved to localStorage
+- Toggle button in header on all pages
+- Uses Tailwind's `dark:` variant classes
 
-@media screen and (max-width: 768px) {
-    /* Mobile styles */
+## Pages
+
+| Page | Description |
+|------|-------------|
+| **Home** | Hero section, recent news, research highlights, stats, active projects |
+| **Research** | 6 research areas with sidebar navigation and circuit background |
+| **Projects** | Active and completed EU-funded projects loaded from JSON |
+| **Publications** | Filterable list by year, type, and search keywords |
+| **Team** | Lab Director, Faculty members, PhD students/Research Associates |
+| **News** | Upcoming events, recent talks, latest news |
+| **About** | Mission, research excellence, impact, facilities |
+| **Contact** | Contact info cards, message form, collaboration opportunities |
+| **Infrastructure** | HPC resources, software tools, lab facilities |
+
+## Data Files
+
+### publications.json
+
+```json
+{
+  "publications": [
+    {
+      "title": "Paper Title",
+      "authors": ["Author 1", "Author 2"],
+      "venue": "Journal/Conference Name",
+      "year": 2024,
+      "type": "Journal Article",
+      "tags": ["ML", "NLP"]
+    }
+  ]
 }
 ```
 
-## 🌐 Deployment
+### projects.json
 
-### Option 1: GitHub Pages
+```json
+{
+  "projects": [
+    {
+      "id": "project-id",
+      "title": "Project Name",
+      "fullTitle": "Full Project Title",
+      "description": "Project description...",
+      "status": "active",
+      "role": "Lead Partner",
+      "program": "Horizon Europe",
+      "funding": "€2M",
+      "duration": { "start": "2024-01", "end": "2027-12" },
+      "objectives": ["Objective 1", "Objective 2"],
+      "keyInnovations": ["Innovation 1", "Innovation 2"],
+      "website": "https://project-url.eu"
+    }
+  ]
+}
+```
 
-1. Create a GitHub repository
-2. Push the `dm_lab_site` folder contents
-3. Enable GitHub Pages in repository settings
-4. Your site will be at `https://yourusername.github.io/repo-name`
+## Deployment
 
-### Option 2: Netlify/Vercel
+### GitHub Pages
 
-1. Drag and drop the `dm_lab_site` folder into Netlify/Vercel
-2. Site deploys automatically
-3. Get a custom domain or use provided URL
+1. Push to GitHub repository
+2. Go to Settings → Pages
+3. Select source branch (usually `main`)
+4. Site will be available at `https://username.github.io/repo-name`
 
-### Option 3: Traditional Web Hosting
+### Netlify/Vercel
 
-1. Upload all files via FTP to your web server
-2. Ensure `index.html` is in the root directory
-3. Access via your domain
+1. Connect your GitHub repository
+2. Deploy automatically on push
+3. Custom domain optional
 
-## 🔧 Technical Details
+### Traditional Hosting
 
-### Browser Compatibility
+Upload all files to your web server via FTP/SFTP.
 
-- ✅ Chrome 90+
-- ✅ Firefox 88+
-- ✅ Safari 14+
-- ✅ Edge 90+
+## Browser Support
 
-### Performance
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
 
-- No external dependencies (except Google Fonts)
-- Optimized CSS with CSS variables
-- Efficient JavaScript with RAF animations
-- Lazy loading for images (optional)
+## Customization
 
-### Accessibility
+### Adding a New Page
 
-- Semantic HTML structure
-- ARIA labels where needed
-- Keyboard navigation support (arrow keys for panels)
-- Reduced motion support for accessibility
-- Proper heading hierarchy
+1. Copy an existing page as template
+2. Update the `<title>` and meta description
+3. Keep the same header/footer structure
+4. Include the shared scripts:
+   ```html
+   <script src="../js/tailwind-config.js"></script>
+   <!-- ... page content ... -->
+   <script src="../js/theme.js"></script>
+   ```
 
-## 📝 Content Integration from dmlab.edu.gr
+### Updating Navigation
 
-To pull real content from the existing dmlab.edu.gr site:
+The navigation is duplicated in each page. To update, edit the `<nav>` section in all HTML files.
 
-1. **Team**: Copy team member names, titles, bios from existing site
-2. **Projects**: Import project descriptions, funding info, dates
-3. **Publications**: Export publication list and format as shown in publications.html
-4. **Research Areas**: Adapt existing research descriptions to the new format
-5. **Contact Info**: Update with actual phone numbers, emails, addresses
+### Adding Content
 
-## 🎨 Design Philosophy
+- **Publications**: Edit `data/publications.json`
+- **Projects**: Edit `data/projects.json`
+- **News/Events**: Edit `data/news-events.json`
 
-This site follows datalab.to's modern SaaS aesthetic:
+## License
 
-- **Dark theme** with high contrast for readability
-- **Bold typography** with clear hierarchy
-- **Smooth animations** for engaging user experience
-- **Horizontal scrolling** for unique storytelling
-- **Minimalist design** focusing on content
-- **Vibrant accents** to highlight important elements
-
-## 🤝 Contributing
-
-To modify or enhance this site:
-
-1. Edit HTML files for content changes
-2. Modify CSS files for styling adjustments
-3. Update JavaScript files for functionality changes
-4. Test across multiple browsers and devices
-5. Optimize images before adding to assets folder
-
-## 📄 License
-
-This template is created for the Data & Media Laboratory, University of Peloponnese.
-
-## 💡 Tips
-
-- **Keep it simple**: Don't overcomplicate the design
-- **Optimize images**: Compress images to improve load times
-- **Test mobile**: Always check mobile responsiveness
-- **Update regularly**: Keep publications and projects current
-- **Backup often**: Version control with Git recommended
-
-## 🐛 Troubleshooting
-
-### Horizontal scroll not working
-
-- Check that JavaScript files are loaded properly
-- Ensure `scroll-manager.js` is included before closing `</body>` tag
-- Verify browser console for errors
-
-### Images not loading
-
-- Check file paths are correct (relative paths)
-- Ensure image files exist in `assets/images/`
-- Verify image file names match HTML references
-
-### Mobile menu not showing
-
-- Navigation menu automatically hides on mobile (<768px)
-- Implement hamburger menu if needed (currently hidden)
-
-### Animations not smooth
-
-- Reduce animation complexity in `animations.js`
-- Lower `ease` value in scroll manager
-- Check browser performance
-
-## 📧 Support
-
-For questions or issues with this template:
-
-- Review this README thoroughly
-- Check browser console for errors
-- Verify all file paths are correct
-- Test in different browsers
+This website is built for the Data & Media Laboratory, University of Peloponnese.
 
 ---
 
-**Version**: 1.0
-**Created**: 2024
-**Inspired by**: datalab.to design aesthetic
+**Version**: 2.0
+**Updated**: 2024
+**Design**: Tailwind CSS with Stitch Lab-inspired aesthetic
 **Built for**: Data & Media Laboratory, University of Peloponnese
